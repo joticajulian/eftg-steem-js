@@ -64,11 +64,12 @@ ChainTypes.operations= {
     hardfork: 52,
     comment_payout_update: 53,
     return_vesting_delegation: 54,
-    comment_benefactor_reward: 55
+    comment_benefactor_reward: 55,
+    owner_create: 56
 };
 
 //types.hpp
 ChainTypes.object_type = {
   "null": 0,
-  base: 1,
-};
+	  base: 1,
+	};

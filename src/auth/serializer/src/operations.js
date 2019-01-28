@@ -711,6 +711,14 @@ let comment_benefactor_reward = new Serializer(
 }
 );
 
+let owner_create = new Serializer( 
+    "owner_create", {
+    creator: string,
+    owner: string,
+    signing_key: public_key
+}
+);
+
 operation.st_operations = [
     vote,    
     comment,    
@@ -767,7 +775,8 @@ operation.st_operations = [
     hardfork,    
     comment_payout_update,    
     return_vesting_delegation,    
-    comment_benefactor_reward
+    comment_benefactor_reward,
+    owner_create
 ];
 
 let transaction = new Serializer( 
